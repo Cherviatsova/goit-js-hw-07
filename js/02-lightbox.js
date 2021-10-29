@@ -19,7 +19,10 @@ function createGalleryImagesMarkup(galleryItems) {
 
 
 
-var lightbox = new SimpleLightbox('.gallery a', {
+let lightbox = new SimpleLightbox('.gallery a', {
+    captions: true,
+    captionsData: 'alt',
+    captionPosition: 'bottom',
       captionDelay: 250       
 });
 
